@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' lang="pl-pl">
+    <title>Responsywny Model</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style type="text/css">
+        *{
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            background-color: #dc1400;
+            padding: 1rem;
+            color: #fff;
+            font-size: 2rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        footer{
+            background-color: #dc1400;
+            padding: 1rem;
+            padding-top: 0.2rem;
+            color: #fff;
+            font-size: 2rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        p{
+            background-color: #eeeeee;
+            text-align: justify;
+        }
+        h1{
+            font-family: arial;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        h3{
+            font-size: 1.7rem;
+        }
+        h4{
+            font-size: 1.5rem;
+        }
+        h5{
+            font-size:1.2rem;
+        }
+        figure{
+            text-align: center;
+        }
+        form{
+            padding: 1rem;
+            background-color: #eeeeee;
+        }
+        input{
+            border: #dc1400 solid;
+            padding: 3px;
+            border-radius: 3px;
+            font-family: arial;
+            font-size: 1.2rem;
+        }
+        nav{
+            text-align: right;
+            margin-right: 5%;
+            font-size: 1.2rem;
+        }
+        a{
+            text-decoration: none;
+            color: #aaaaff;
+        }
+        a:hover{
+            color:#fff;
+        }
+        .pierwszy-tekst{
+            margin: 0 auto;
+            padding: 1.2rem;
+            background-color: #fff;
+            font-size: 1.6rem;
+            max-width: 90%;
+            padding-top: 8rem;
+        }
+        .tekst{
+            margin: 0 auto;
+            padding: 1.2rem;
+            background-color: #fff;
+            font-size: 1.6rem;
+            max-width: 90%;
+        }
+        .zdjecie-strony{
+            border-radius: 50px 10px 10px 10px;
+            width: 40%;
+            height: 20%;
+        }
+        .siec-zawartosci{
+            background-color:#ddd;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 5px;
+        }
+        .siec-zawartosci div{
+            background-color: #000;
+            text-align: center;
+            color: #fff;
+            padding: 0.1px;
+        }
+        .przycisk{
+            border: solid #000;
+            background-color: #dc1400;
+            color: #fff;
+            padding: 3px;
+            border-radius: 3px;
+            font-family: arial;
+            font-size: 1.4rem;
+        }
+        #wiadomosc-ojczyznie{
+            border: #dc1400 solid;
+            padding: 3px;
+            border-radius: 3px;
+            font-family: arial;
+        }
+        #flaga{
+            position: fixed;
+            z-index: 1;
+            border: solid #fff;
+        }
+        #polska-flaga{
+            width: 3.2rem;
+            height: 2.0rem;
+        }
+        @media(min-width: 280px) and (max-width:820px){
+            .zdjecie-strony{
+            border-radius: 50px 10px 10px 10px;
+            width: 90%;
+            height: 70%;
+            }
+            input{
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>Zajebiste polskie zespoły:
+        <a href="https://www.youtube.com/@horytnica">Horytnica</a>
+        <a href="https://www.youtube.com/@RunikaBand">Runika</a>
+        <a href="https://hanba1926.bandcamp.com/">Hańba!</a>
+    </nav>
+    <h3>Rzeczpospolita Polska</h3>
+    <h4>Piękny, dumny i wspaniały kraj!</h4>
+</header>
+<div id="flaga">
+    <img id="polska-flaga" src="img/polish_flag.png" alt="dumna-polska-flaga">
+</div>
+<section class="pierwszy-tekst">
+    <h1>To pierwsza (i główna) część strony</h1>
+    <figure>
+        <img class="zdjecie-strony" src="./img/szarza_husarii.jpg" alt="Szarżający Husarii">
+        <figcaption>Szarża Husarii!</figcaption>
+    </figure>
+    <p> Hymn ten traktuje o moim kraju, gdzie jest mi dane pracować, żyć, poznawać ludzi co mnie mijają, śnią o potędze, codziennie tkwić. Bo to jest właśnie Moja Ojczyzna, zielone łąki, lasy i wody, chaty i kwiaty, każdy to przyzna że taka właśnie jest Moja Ojczyzna!
+    </p>
+</section>
+<br>
+<section class="tekst">
+    <h2>To druga część strony</h2>
+    <figure>
+        <img class="zdjecie-strony" src="./img/polski_doge.jpg" alt="Polski Doge">
+        <figcaption>POLSKA GUROM!</figcaption>
+    </figure>
+    <p>Patrz, z Reichstaga polska flaga! Zwisa, a ten krzyż-łamaga, co to go zwą hakenkrojcem i reprezentuje słońce. Z ministerstwa fasad skuty depczą po nim polskie buty, rugia kwitnie macimową prasłowiańskie kwitnie słowo!</p>
+</section>
+<br>
+<section class="tekst">
+    <h2>To trzecia część strony</h2>
+    <figure>
+        <img class="zdjecie-strony" src="./img/polish_patriots.jpeg" alt="Pieczęć Patriotyzmu">
+        <figcaption>Strona zrobiona przez prawdziwych patriotycznych Polaków</figcaption>
+    </figure>
+    <p>Będą was zwali bandytami, kiedy sięgniecie do oręża. Wyklęci i poszczuci psami ruszycie odciąć głowę węża.</p>
+</section>
+<br>
+<section class="tekst">
+    <h2>Kilku z Bohaterów Polski</h2>
+    <div class="siec-zawartosci">
+        <div>
+            <figure>
+                <img class="zdjecie-strony" src="./img/jozef-pilsudski.jpg" alt="Piłduski">
+                <figcaption><a href="https://pl.wikipedia.org/wiki/J%C3%B3zef_Pi%C5%82sudski">Józef Klemens Piłsudski</a></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="zdjecie-strony" src="./img/lis-kula.jpg" alt="Lis-Kula">
+                <figcaption><a href="https://pl.wikipedia.org/wiki/Leopold_Lis-Kula">Leopold Lis-Kula</a></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="zdjecie-strony" src="./img/witold-pilecki.jpg" alt="Druh">
+                <figcaption><a href="https://pl.wikipedia.org/wiki/Witold_Pilecki">Witold Pilecki</a></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="zdjecie-strony" src="./img/karol-jozef.jpg" alt="Papież Polak">
+                <figcaption><a href="https://pl.wikipedia.org/wiki/Jan_Pawe%C5%82_II">Karol Józef Wojtyła</a></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="zdjecie-strony" src="./img/rafal-ganowicz.jpg" alt="Gan">
+                <figcaption><a href="https://pl.wikipedia.org/wiki/Rafa%C5%82_Gan-Ganowicz">Rafał Gan-Ganowicz</a></figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="zdjecie-strony" src="./img/korwin-mikke.JPG" alt="Korwin">
+                <figcaption><a href="https://pl.wikipedia.org/wiki/Janusz_Korwin-Mikke">Janusz Korwin Mikke</a></figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+<section class="tekst">
+    <h2>Formularz Patriotyczny</h2>
+    <form action="#" method="post" target="_blank">
+        <label for="imie">Imię:</label><br>
+        <input type="text" name="imie" placeholder="Proszę napisz Swoje imię"><br><br>
+        <label for="nazwysko">Nazwysko:</label><br>
+        <input type="text" name="nazwysko" placeholder="Proszę napisz Swoje nazwysko"><br><br>
+        <input type="checkbox" name="narodowosc" value="narodowosc">
+        <label for="imie">Jestem Polakiem (albo Polką)</label><br>
+        <input type="checkbox" name="polskosc" value="polskosc">
+        <label for="imie">Mam polskie pochodzenie</label><br><br>
+        <label for="telefon">Numer Telefonu:</label><br>
+        <input type="number" name="telefon" placeholder="Proszę napisz Swój numer telefonu"><br><br>
+        <label for="wiadomosc-ojczyznie">Napisz Swoją wiadomość do Ojczyzny:</label><br>
+        <textarea id="wiadomosc-ojczyznie" rows="6" cols="30"></textarea><br>
+        <button class="przycisk" type="reset" value="usunie">Usuń</button>&nbsp
+        <button class="przycisk" type="submit" value="wyslanie">Wysłaj</button>
+    </form>
+</section>
+<footer>
+    <h3>Rzeczpospolita Polska</h3>
+    <h4>Piękny i niezwiciężony kraj!</h4>
+    <br><h5>Lokalizacja: <em>Europa Środkowa</em></h5>
+    <h5>Wiek: <em>1.027 lat i trwając</em></h5>
+    <h5>Data Zgonu: <em>NIGDY!</em></h5>
+</footer>
+</body>
+</html>
